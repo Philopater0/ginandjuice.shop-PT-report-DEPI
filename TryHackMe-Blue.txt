@@ -1,0 +1,34 @@
+https://medium.com/@PhilopaterSh/tryhackme-blue-writeup-walkthrough-with-answers-765c273485e2
+
+Executive Summary:
+This report covers the penetration testing process for the TryHackMe "Blue" machine, focusing on exploiting SMB vulnerabilities, specifically the EternalBlue exploit. The exercise highlights the importance of proper patch management in preventing high-risk vulnerabilities.
+
+Scope:
+The test was conducted on the TryHackMe "Blue" machine, targeting its Windows operating system. The primary focus was on identifying and exploiting SMB-related vulnerabilities.
+
+Methodology:
+The testing involved several key steps:
+
+Reconnaissance: Utilized Nmap to scan all ports and identify running services.
+Exploitation: Used Metasploit to exploit the MS17-010 vulnerability (EternalBlue).
+Privilege Escalation: Converted the shell to a Meterpreter session and escalated privileges to NT AUTHORITY\SYSTEM.
+Cracking: Used Hashcat to crack the non-default user password obtained through hash dumping.
+Discovered Vulnerabilities:
+SMB Vulnerability (MS17-010): The machine was vulnerable to the EternalBlue exploit, allowing unauthorized remote code execution.
+Risk Assessment:
+Severity: High
+Impact: Exploitation could allow attackers to gain full control over the system, leading to potential data breaches or system compromise.
+Recommendations:
+Patch Management: Ensure that all critical patches, especially those related to SMB vulnerabilities, are applied promptly.
+Network Segmentation: Limit SMB exposure by segmenting networks and restricting access to necessary services.
+Methods and Techniques:
+Nmap: Used for network scanning and service detection.
+Metasploit: Deployed for the exploitation of the EternalBlue vulnerability.
+Hashcat: Utilized to crack the non-default user password.
+Conclusion:
+The TryHackMe "Blue" machine demonstrated the critical need for regular patching and vulnerability management. The exercise provided valuable insights into the exploitation process and reinforced the importance of defensive measures in cybersecurity.
+
+Appendices:
+Nmap Scan Results: [Attach the output]
+Metasploit Commands Used: [Detail the commands]
+Hashcat Process: [Include the cracking process]
