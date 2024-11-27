@@ -1,0 +1,23 @@
+https://www.vulnhub.com/entry/kioptrix-level-1-1,22/
+
+we should edit ethernet from *Bridged* to *Nat*
+
+TO start solve this machine 
+- we must scan for what is IP for machine can used this *arp-scan -l* or *netdiscover* 
+- after we know what IP for machine now scan machine can used this *nmap -A -p- -T4 host*
+- after what port and serves we scan can used this msfconsle 
+msf> search scanner/"name serves"
+msf> use *number* or *name*
+msf> ...... show options
+After give all data required 
+msf> ..... *run* or *exploit*
+
+NOW we have serves version or an information we need.
+- can used *searchexploit and (name serves)* for search to what exploit 
+- know we have what can used 
+- can used *searchexploit -m Path* now we have download  
+- we use *ls* to know what name file
+- to can use this file away *gcc -o name_you_used name_file_download_it*
+- now to open exploit code can used *./*
+- after import all requirement can used to code
+- In this machine after connect don't show any file used commend *ls* to show must used *mail* but if open  any email can't open or see again.
